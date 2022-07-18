@@ -1,0 +1,17 @@
+{{>partials/header }}
+  <div class="container">
+    <h1>Todos usuários</h1>
+    <div class="content-inputs">
+      <a href="/pesquisar" class="btn-search btn-back">Voltar</a>
+    </div>
+    <div class="content-search">
+      <div class="div-resp">
+        <ul>
+          {{#users }}
+            {{>partials/allUsers }}
+          {{/users }}
+        </ul>
+      </div>
+    </div>
+  </div>
+{{>partials/footer }}

@@ -1,0 +1,25 @@
+{{>partials/header }}
+  <div class="container">
+    <h1 class="h1-search h1-top">Pesquisar usuários</h1>
+    <div class="content">
+      <div class="content-search">
+        <img src="image/img_search.jpg" alt="image de cadastro">
+      </div>
+      <div class="content-inputs">
+        <form method="GET" action="/pesquisar" class="form-search">
+          <input type="search" name="nomeSrc" placeholder="Buscar pelo nome" />
+          <input type="submit" value="Buscar" class="btn-search" />
+          <a href="/todosUsers" class="btn-search">Mostrar todos</a>
+        </form>
+        <div class="div-res">
+          {{#finded }}
+            <p><strong>Nome:</strong> {{ nome }}</p>
+            <p><strong>Telefone:</strong> {{ telefone }}</p>
+            <p><strong>Cpf:</strong> {{ cpf }}</p>
+            <p><strong>Rua:</strong> {{ endereco }} {{ numero }} - {{ estado }}</p>
+          {{/finded }}
+        </div>
+      </div>
+    </div>
+  </div>
+{{>partials/footer }}
