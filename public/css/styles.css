@@ -82,6 +82,9 @@
   border-radius: 5px;
   transition: .5s;
 }
+.content .form input[type="text"]:hover {
+  box-shadow: 1px 1px 1px var(--color-font);
+}
 .content .form .input-ne {
   display: flex;
   justify-content: center;
@@ -121,6 +124,9 @@
   border: 1px solid var(--color-border);
   border-radius: 5px;
   transition: .5s;
+}
+.content-inputs .form-search input:hover {
+  box-shadow: 1px 1px 1px var(--color-font);
 }
 .btn-search {
   width: 120px;

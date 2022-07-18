@@ -4,6 +4,7 @@ import { User } from '../models/User';
 
 export const buscar = async (req: Request, res: Response) => {
   let nameFind: string = req.query.nomeSrc as string;
+  let showUser: boolean = false;
   let finded = await User.findAll({
     where: {
       nome: {
@@ -12,7 +13,11 @@ export const buscar = async (req: Request, res: Response) => {
     }
   });
 
-  res.render('pages/search', { finded });
+  if (nameFind) {
+    showUser = true;
+  }
+
+  res.render('pages/search', { finded, showUser });
 }
 
 export const mostrarTodoUser = async (req: Request, res: Response) => {
