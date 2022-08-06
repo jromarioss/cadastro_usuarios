@@ -1,15 +1,8 @@
 # cadastro_usuarios
 Sistema de cadastro de usuários.
 
-## Precisa ter as dependias globais
--nodemon
-
--ts-node
-
--typescript
-
 ## Banco de dados
-sistema integrado com banco de dado MYSQL, com o client DBeaver. Criar no banco de dado de sua preferência.
+sistema integrado com banco de dado MYSQL.
 
 DataBases: projetos_cadastro
 
@@ -24,4 +17,4 @@ npm install = para instalar as dependencias
 
 npm run start = para ativar o servidor
 
-abra o navegador em localhost:4000
+abra o navegador em localhost:3000
