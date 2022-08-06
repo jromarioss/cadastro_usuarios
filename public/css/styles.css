@@ -131,16 +131,16 @@
 .btn-search {
   width: 120px;
   height: 40px;
-  font-size: 16px;
   font-weight: bold;
   color: var(--color-font);
   border-radius: 5px;
   border: 1px solid var(--color-border);
 }
 .btn-search:hover {
+  box-shadow: 1px 1px 1px var(--color-font);
   background-color: rgb(255, 53, 53);
   color: white;
-  border: none;
+  border: white;
 }
 .form-search a {
   width: 120px;
@@ -151,9 +151,12 @@
   border-radius: 5px;
   color: var(--color-font);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: inherit;
   font-weight: bold;
   background-color: rgb(240, 240, 240);
+}
+.form-search a:hover {
+  border: none;
 }
 .content-inputs .div-res {
   margin-top: 50px;
@@ -161,6 +164,41 @@
 .content-inputs .div-res p {
   font-size: 1.6rem;
   line-height: 2rem;
+}
+.content-inputs .div-res .div-links {
+  margin-top: 15px;
+}
+.content-inputs .div-res .div-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px;
+  transition: all ease .5s;
+}
+.content-inputs .div-res .div-links a:hover {
+  box-shadow: 1px 1px 1px var(--color-font);
+  background-color: rgb(255, 53, 53);
+  color: white;
+}
+
+/* --- EDIT --- */
+.div-res-edit {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.div-edit-form form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* --- SHOWALL --- */
@@ -182,9 +220,10 @@
   right: 150px;
 }
 .content-inputs .btn-back:hover {
+  box-shadow: 1px 1px 1px var(--color-font);
   background-color: rgb(255, 53, 53);
   color: white;
-  border: none;
+  border: white;
 }
 .content-search .div-resp {
   width: 90vw;
