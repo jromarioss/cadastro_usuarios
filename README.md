@@ -10,7 +10,7 @@
 
 </h3>Rotas: </h3>
 <ul>
-  <li>POST: /users - Cadastrar usuário</ul>
+  <li>POST: /users - Cadastrar usuário</li>
   <li>GET: /users - Listar usuários </li>
     
 </ul>
