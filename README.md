@@ -1,20 +1,7 @@
-# cadastro_usuarios
-Sistema de cadastro de usuários.
+# CRUD 
 
-## Banco de dados
-sistema integrado com banco de dado MYSQL.
+##CRUD básico para treinar conceitos básicos de orientação á objetos e tipagens com o javascript.
 
-DataBases: projetos_cadastro
-
-Tabela: usuarios
-
-Colunas: id, nome, telefone, cpf, endereco, numero, estado
-
-## Iniciar o projeto
-comandos necessário para iniciar o projeto
-
-npm install = para instalar as dependencias
-
-npm run start = para ativar o servidor
-
-abra o navegador em localhost:3000
+##Rodando o projeto
+npm install
+npm run dev
