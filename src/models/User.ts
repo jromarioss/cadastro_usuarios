@@ -1,40 +1,18 @@
-import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../instance/mysql';
+import { v4 as uuidv4 } from "uuid";
+class User {
+  declare id?: string;
+  declare name: string;
+  declare phone: string;
+  declare cpf: string;
+  declare address: string;
+  declare number: number;
+  declare state: string;
 
-export interface UserInstance extends Model {
-  id: number;
-  nome: string;
-  telefone: string;
-  cpf: string;
-  endereco: string;
-  numero: number;
-  estado: string;
+  constructor() {
+    if (!this.id) {
+      this.id = uuidv4();
+    }
+  }
 }
 
-export const User = sequelize.define<UserInstance>('Users', {
-  id: {
-    primaryKey: true,
-    type: DataTypes.INTEGER
-  },
-  nome: {
-    type: DataTypes.STRING
-  },
-  telefone: {
-    type: DataTypes.STRING
-  },
-  cpf: {
-    type: DataTypes.STRING
-  },
-  endereco: {
-    type: DataTypes.STRING
-  },
-  numero: {
-    type: DataTypes.INTEGER
-  },
-  estado: {
-    type: DataTypes.STRING
-  }
-}, {
-  tableName: 'usuarios',
-  timestamps: false
-});
+export { User };
